@@ -85,9 +85,9 @@ export const Header = () => {
             </div>
           </div>
           <img
-            src="../img/man.jpg"
+            src="https://res.cloudinary.com/diab-control/image/upload/v1650669573/man_py2jue.jpg"
             alt="Man"
-            className="-z-1 right-0 mt-12 -mt-6 w-3/4 md:absolute md:mt-0"
+            className="-z-1 right-4  w-4/12 md:absolute md:mt-0"
           />
         </div>
       </div>
