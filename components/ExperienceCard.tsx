@@ -1,12 +1,14 @@
 import React, { FC } from 'react'
 
-interface Experience {
-  companyName: string
-  experience: {
-    html: string
+type Experience = {
+  experienceData: {
+    companyName: string
+    experience: {
+      html: string
+    }
+    sectionTitle: string
+    skills: string[]
   }
-  sectionTitle: string
-  skills: string[]
 }
 
 const ExperienceCard: FC<Experience> = ({ experienceData }) => {
@@ -33,7 +35,7 @@ const ExperienceCard: FC<Experience> = ({ experienceData }) => {
         </h3>
 
         <div className="mt-6 mb-8 flex w-full flex-wrap justify-center gap-3 lg:w-auto lg:justify-start">
-          {experienceData.skills.map((skill: string, index: string) => (
+          {experienceData.skills.map((skill, index) => (
             <div className="badge" key={index}>
               {skill}
             </div>
