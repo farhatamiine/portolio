@@ -7,6 +7,36 @@ body {
   scroll-behavior: smooth;
 }
 
+.hero-title {
+  color: #fff;
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5.5em;
+  letter-spacing: -3px;
+  line-height: 110%;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Kalam', cursive;
+}
+
+p > ul > li {
+  list-style: circle;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  p > ul > li {
+    list-style: none;
+    text-align: left;
+  }
+}
+
 .left-50 {
   left: 50%;
 }

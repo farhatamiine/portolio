@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="container mx-auto mt-64 flex w-full items-center justify-between px-8 md:px-14 lg:px-24">
       <section className="w-full">
-        <h2 id="hire" className="secondary-title">
+        <h2 id="contact" className="secondary-title">
           Contact Me
         </h2>
         <p className="section-paragraph">

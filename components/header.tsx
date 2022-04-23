@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { FC } from 'react'
 
 export const Header = () => {
@@ -5,14 +6,15 @@ export const Header = () => {
     <>
       <header className="py-6">
         <div className="container mx-auto flex w-full items-center justify-between px-8 md:px-14 lg:px-24">
-          <div className="text-lg font-bold">Amine Farhat</div>
+          <div className=" text-lg font-bold">Amine Farhat</div>
           <div className="hidden items-center space-x-12 md:flex">
             <a href="#" className="text-selected-text">
               Home
             </a>
-            <a href="#work">My work</a>
-            <a href="#clients">Clients</a>
-            <a href="#hire">
+            <Link href="/blog">Tech Blog</Link>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">
               <button className="bg-theme px-6 py-2 font-bold">
                 Contact Me
               </button>
@@ -47,15 +49,15 @@ export const Header = () => {
                 </span>
               </a>
               <a
-                href="#work"
+                href="#projects"
                 className="nav-dot block h-7 w-7 rounded-full border-4 border-nav bg-body"
               >
                 <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">
-                  Work
+                  Project
                 </span>
               </a>
               <a
-                href="#clients"
+                href="#experience"
                 className="nav-dot block h-7 w-7 rounded-full border-4 border-nav bg-body"
               >
                 <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">
@@ -63,7 +65,7 @@ export const Header = () => {
                 </span>
               </a>
               <a
-                href="#hire"
+                href="#contact"
                 className="nav-dot block h-7 w-7 rounded-full border-4 border-nav bg-body"
               >
                 <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">
@@ -73,10 +75,10 @@ export const Header = () => {
             </div>
           </nav>
 
-          <div className="mt-0 flex max-w-xl flex-wrap justify-center md:my-36 md:justify-start lg:ml-20">
-            <h1 className="text-center text-5xl font-bold md:text-left md:text-6xl lg:text-7xl">
-              Building
-              <br /> beautiful web experiences.
+          <div className="mt-0 flex max-w-full flex-wrap justify-center md:my-36 md:justify-start lg:ml-20">
+            <h1 className="hero-title ont-bold text-center md:text-left">
+              Hey, I'm Farhat.
+              <br />A Software Developper
             </h1>
             <div className="flex w-full justify-center md:justify-start">
               <button className="mt-12 flex items-center space-x-3 bg-theme px-8 py-4 font-bold text-white">
@@ -87,7 +89,7 @@ export const Header = () => {
           <img
             src="https://res.cloudinary.com/diab-control/image/upload/v1650669573/man_py2jue.jpg"
             alt="Man"
-            className="-z-1 right-4  w-4/12 md:absolute md:mt-0"
+            className="-z-1 right-4 hidden  w-4/12 md:absolute  md:mt-0 lg:block"
           />
         </div>
       </div>
