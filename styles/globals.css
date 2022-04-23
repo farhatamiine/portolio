@@ -25,13 +25,13 @@ body {
   font-family: 'Kalam', cursive;
 }
 
-p > ul > li {
+div > ul > li {
   list-style: circle;
   line-height: 2em;
 }
 
 @media screen and (max-width: 768px) {
-  p > ul > li {
+  div > ul > li {
     list-style: none;
     text-align: left;
   }

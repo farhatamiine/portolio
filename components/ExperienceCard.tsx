@@ -43,12 +43,12 @@ const ExperienceCard: FC<Experience> = ({experienceData}) => {
                     ))}
                 </div>
 
-                <p
+                <div
                     className="text-secondary"
                     dangerouslySetInnerHTML={{
                         __html: experienceData.experience.html,
                     }}
-                />
+                ></div>
             </div>
         </div>
     )
