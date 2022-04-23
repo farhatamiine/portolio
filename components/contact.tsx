@@ -32,7 +32,7 @@ export default function Contact() {
               <label className="mb-6 block text-xl font-bold text-white">
                 Message
               </label>
-              <textarea className="h-56 w-full resize-none border border-input-border bg-input px-4 py-4"></textarea>
+              <textarea className="h-56 w-full resize-none border border-input-border bg-input px-4 py-4"/>
             </div>
             <button className="bg-theme px-6 py-2 font-bold text-white">
               Send it!
